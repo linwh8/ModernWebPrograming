@@ -1,0 +1,110 @@
+/*
+	project: My calculator;
+	author: WeiHong Lin;
+	id: 15331204;
+	time: Wed Oct5 8:31PM;
+	Feature: 1.gradual change of background-color;
+			 2.protrusion of button togrther with calculator itself;
+			 3.different color of button, using opacity;
+			 4.using new font-family of displaying, let it be more similar to the real one;
+			 5.setting the background with a comfortable image;
+			 6.it can test whether Arithmetic Expressions is valid, if not, alert will occur;
+			 7.it can deal with the big number using science notation;
+			 8.it can use the result of the last calculation and continue the next one;
+			 9.when alert occurs, you can continue to change the expression instead of inputing again;
+			 10.it owns special color of the result.
+*/
+
+/* Large layout location */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-image: url("background.jpg");
+}
+
+/* Define my own font-family */
+@font-face {
+	font-family: 'calculate_style';
+	src:url("1.ttf");
+}
+
+#title {
+	text-align: center;
+	color: green;
+	font-size: 44px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: dotted;
+}
+
+#calculator {
+	border:5px solid black;
+	width: 317px;
+	height: 417px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	background-color:#373737;
+	/* Gradual color */
+	background-image: -webkit-gradient(linear, center top, center bottom, from(rgb(43,43,43)), color-stop(50%, rgb(118,118,118)) ,to(rgb(43,43,43)));
+}
+
+#calculator_container {
+	border:1px solid black;
+	width:360px;
+	height: 460px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: -3px 6px 3px, -13px 5px 3px;
+	background-color: #272727;
+	/* Gradual color */
+	background-image: -webkit-gradient(linear, center left, center right, from(rgb(43,43,43)), color-stop(50%, rgb(118,118,118)) ,to(rgb(43,43,43)));
+}
+
+#result {
+	width: 294px;
+	height: 48px;
+	border: 3px solid gray;
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	background-color: #1D1D1D;
+	text-align: right;
+	color: #80CAAC;
+	font-size: 30px;
+	/* using my own font-family */
+	font-family: calculate_style;
+}
+
+.button {
+	width: 65px;
+	height: 65px;
+	font-size: 20px;
+	color: white;
+	margin-left:6px;
+	border-radius: 35%;
+	background-color: #1F1F1F;
+	/* make the protrusion of botton  */
+	box-shadow: -2px 3px #FFF, -4px 3px #AAA, -6px 6px #666, -8px 9px #000;
+	opacity: 0.8;
+}
+
+#first_row,#second_row,#third_row,#fourth_row,#fifth_row {
+	margin-left: 12px;
+}
+
+#equal {
+	background-color:rgb(104,1,2);
+}
+
+#delete_all,#delete_one {
+	background-color:rgb(104,1,2);
+}
+
+#plus,#subtract,#multiply,#divide {
+	background-color: rgb(43,62,92);
+}
