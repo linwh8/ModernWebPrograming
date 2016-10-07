@@ -1,0 +1,55 @@
+.top-bar {
+    height: 45px;
+    background: #333;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+li {
+	display:inline-block;
+	font-weight: bold;
+	margin-right: 40px;
+}
+.bar-left{
+	list-style: none;
+	margin-top: 0;
+	margin-left: 0;
+}
+.img_title{
+	color:#556B2F;
+	text-decoration: underline;
+}
+a{
+	color:white;
+	text-decoration: none;
+}
+a:hover{
+	font-size:20px;
+	color:red;
+}
+h1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:80px;
+	font-style:italic;
+	color:#556B2F;
+}
+li span{
+	font-size:30px;
+	color:green;
+}
+.pie_pic{
+	width:300px;
+	height: 300px;
+}
+.pie_pic:hover{
+	width:400px;
+	height: 400px;
+}
+body{
+	background-image: url("http://www.ahczqz.cn/jxue/edit/UploadFile/20115/20115393417931.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
