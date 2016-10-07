@@ -1,0 +1,114 @@
+/*Environment:mac
+  Please refer to expected_output_mac.png
+*/
+body {
+	background-image: url(image/background.png);
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+#banner {
+	text-align: center;
+	background-image: url(image/bannerbackground.png);
+	background-repeat: repeat-x;
+}
+h1 {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+#overall {
+	width:800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid gray;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+#heading {
+	font-size: 8pt;
+	color: white;
+	background-image: url(image/rottenbackground.png);
+	background-repeat: repeat-x;
+	height: 83px;
+	line-height: 83px;
+}
+#heading span {
+	display: inline-block;
+	font-size: 48pt;
+	color:red;
+	font-weight:bold;
+}
+#heading img {
+	float: left;
+}
+#left_section{
+	width:550px;
+}
+.reviews {
+	font-weight: bold;
+	font-size: 8pt;
+	background-color: #E1D697;
+	border:2px solid gray;
+	padding: 8px;
+	overflow: hidden;
+	margin: 10px;
+}
+.reviews img{
+	float:left;
+	padding-right: 5px;
+}
+.reviews_info {
+	font-style: italic;
+}
+.reviews_info img {
+	float:left;
+	padding-right: 5px;
+	margin-left: 10px;
+}
+.reviews_info span {
+	font-style: normal;
+}
+.review {
+	margin-bottom: 4em;
+}
+#right_bar{
+	float:right;
+	width: 250px;
+	background-color: #A2B964;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+#section span{
+	font-weight: bold;
+}
+.item {
+	margin:1em;
+}
+#left{
+	float:left;
+	width:49%;
+}
+#right{
+	width:53%;
+	margin-left: 260px;
+	margin-right: 1px;
+}
+#bar{
+	background-color: #A2B964;
+	text-align: center;
+	clear: right;
+	height: 2em;
+	line-height: 2em;
+}
+#valid{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#whole_page{
+	overflow: hidden;
+}
