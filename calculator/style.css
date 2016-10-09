@@ -22,7 +22,6 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	background-image: url("background.jpg");
 }
 
 /* Define my own font-family */
@@ -31,67 +30,90 @@ html, body {
 	src:url("1.ttf");
 }
 
-#title {
-	text-align: center;
-	color: green;
-	font-size: 44px;
-	width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	border-style: dotted;
-}
-
 #calculator {
-	border:5px solid black;
-	width: 317px;
+	width: 350px;
 	height: 417px;
-	margin-left: auto;
+	margin-left: 140px;
 	margin-right: auto;
-	margin-top: 15px;
-	background-color:#373737;
-	/* Gradual color */
-	background-image: -webkit-gradient(linear, center top, center bottom, from(rgb(43,43,43)), color-stop(50%, rgb(118,118,118)) ,to(rgb(43,43,43)));
+	margin-top: 200px;
 }
 
 #calculator_container {
+	position: relative;
+	background: url("background.jpg") no-repeat 50% 50%;
+	background-size: 120%;
 	border:1px solid black;
-	width:360px;
-	height: 460px;
+	width:1000px;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: -3px 6px 3px, -13px 5px 3px;
-	background-color: #272727;
-	/* Gradual color */
-	background-image: -webkit-gradient(linear, center left, center right, from(rgb(43,43,43)), color-stop(50%, rgb(118,118,118)) ,to(rgb(43,43,43)));
 }
 
 #result {
-	width: 294px;
+	width: 300px;
 	height: 48px;
-	border: 3px solid gray;
-	margin-left: 8px;
+	margin-left: 30px;
 	margin-top: 8px;
 	margin-bottom: 12px;
+	text-align: center;
+	box-shadow: -2px 3px #FFF, -4px 3px #AAA, -6px 6px #666, -8px 9px #000;
+	/* using my own font-family */
+}
+
+#result, #record {
 	background-color: #1D1D1D;
-	text-align: right;
+	border: 3px solid gray;
 	color: #80CAAC;
 	font-size: 30px;
-	/* using my own font-family */
 	font-family: calculate_style;
 }
 
+#record {
+	position: absolute;
+	top:200px;
+	left: 560px;
+	width:300px;
+	height: 500px;
+	box-shadow: 2px 3px #FFF, 4px 3px #AAA, 6px 6px #666, 8px 9px #000;
+	overflow: hidden;
+}
+
+#clean {
+	position: absolute;
+	border: 3px solid red;
+	width: 50px;
+	height: 20px;
+	border-radius: 20%;
+	top: 730px;
+	left: 800px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	box-shadow: 2px 3px #FFF, 4px 3px #AAA, 6px 6px #666, 8px 9px #000;
+	opacity: 0.6;
+}
+
+#clean:hover {
+	opacity: 1;
+}
+
 .button {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	font-size: 20px;
 	color: white;
-	margin-left:8px;
-	margin-top: 5px;
+	margin-left:10px;
+	margin-top: 15px;
 	border-radius: 35%;
 	background-color: #1F1F1F;
 	/* make the protrusion of botton  */
 	box-shadow: -2px 3px #FFF, -4px 3px #AAA, -6px 6px #666, -8px 9px #000;
 	opacity: 0.8;
+}
+
+.button:hover {
+	opacity: 1;
 }
 
 #first_row,#second_row,#third_row,#fourth_row,#fifth_row {
