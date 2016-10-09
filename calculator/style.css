@@ -81,11 +81,12 @@ html, body {
 }
 
 .button {
-	width: 65px;
-	height: 65px;
+	width: 60px;
+	height: 60px;
 	font-size: 20px;
 	color: white;
-	margin-left:6px;
+	margin-left:8px;
+	margin-top: 5px;
 	border-radius: 35%;
 	background-color: #1F1F1F;
 	/* make the protrusion of botton  */
