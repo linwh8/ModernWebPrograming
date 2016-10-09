@@ -26,7 +26,7 @@ html, body {
 
 /* Define my own font-family */
 @font-face {
-	font-family: 'calculate_style';
+	font-family: '../font-family/calculate_style';
 	src:url("1.ttf");
 }
 
@@ -40,7 +40,7 @@ html, body {
 
 #calculator_container {
 	position: relative;
-	background: url("background.jpg") no-repeat 50% 50%;
+	background: url("../image/background.jpg") no-repeat 50% 50%;
 	background-size: 120%;
 	border:1px solid black;
 	width:1000px;
