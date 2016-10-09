@@ -1,0 +1,216 @@
+/* 大布局定位 */
+html, body {
+	width:100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#at-plus-container {
+	position: relative;
+	width:156px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bottom-positioner {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+#button {
+	margin-left: 65px;
+	margin-bottom: 78px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color:red;
+}
+
+#info-bar {
+	position: absolute;
+	left: 26px;
+	bottom: 137px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: rgb(126,126,126);
+	opacity: 0;
+}
+
+#button:hover #info-bar {
+	opacity: 1;
+}
+
+.info ul, #control-ring {
+	list-style: none;
+}
+
+#control-ring-container {
+	position: absolute;
+	width: 100%;
+	height: 129px;
+	left:0px;
+	bottom: 28px;
+}
+
+.apb {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background:url(assets/images/atplus_white.png) no-repeat 50% 50% rgb(151, 154, 205);
+	background-size: 80%;
+	left: 65px;
+	bottom:78px;
+}
+
+#button:hover .apb {
+	width: 50px;
+	height: 50px;
+	background:url(assets/images/atplus_green.png) no-repeat 50% 50% rgb(37,72,182);
+	background-size: 75%;
+}
+
+.info li {
+	position: absolute;
+}
+
+li.mine {
+	display: inline-block;
+	top:88px;
+}
+
+li.user {
+	top: 13px;
+}
+
+li.comment {
+	top: 53px;
+}
+
+li.posted {
+	left: 21px;
+}
+
+li.like {
+	left: 69px;
+}
+
+.info li span {
+	position: absolute;
+}
+.page span {
+	color: white;
+}
+.user span {
+	font-size: 14px;
+	left:30px;
+	top: 0px;
+}
+
+.comment span {
+	font-size:  27px;
+	left:30px;
+	top:-9px;
+}
+
+.mine span{
+	color: rgb(82,158,125);
+	font-weight: bold;
+	left: 30px;
+}
+
+.like span {
+	left:33px;
+	bottom:10px;
+}
+
+.posted span {
+	left:28px;
+	bottom:8px;
+}
+
+#control-ring li {
+	position: absolute;
+	display: block;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+}
+
+li.button {
+	background-size: 55%;
+}
+
+.mask {
+	background: url(assets/images/nomask.png) no-repeat 50% 50% rgb(126,126,126);
+	left: 13px;
+	top:0px;
+	opacity: 0;
+}
+
+#button:hover .mask {
+	opacity: 1;
+}
+
+.history {
+	background: url(assets/images/history.png) no-repeat 50% 50% rgb(126,126,126);
+	left:0px;
+	top:37px;
+	opacity: 0;
+}
+
+#button:hover .history {
+	opacity: 1;
+}
+
+.message {
+	background: url(assets/images/message.png) no-repeat 50% 50% rgb(126,126,126);
+	left:14px;
+	top:73px;
+	opacity: 0;
+}
+
+#button:hover .message {
+	opacity: 1;
+}
+
+.setting {
+	background: url(assets/images/setting.png) no-repeat 50% 50% rgb(126,126,126);
+	left: 50px;
+	top: 96px;
+	opacity: 0;
+}
+
+#button:hover .setting {
+	opacity: 1;
+}
+
+.sign {
+	background: url(assets/images/signin.png) no-repeat 50% 50% rgb(126,126,126);
+	left: 92px;
+	top: 92px;
+	opacity: 0;
+}
+
+#button:hover .sign {
+	opacity: 1;
+}
+
+.unread {
+	display: block;
+	width:21px;
+	height: 21px;
+	border-radius: 50%;
+	color: white;
+	background-color: rgb(233,81,90);
+	line-height: 21px;
+	text-align: center;
+	margin-left: 23px;
+	margin-top: -5px;
+	font-size: 14px;
+}

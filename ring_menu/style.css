@@ -1,0 +1,212 @@
+/*
+	Info: Weihong, Lin(15331204);
+	System: Mac OX 10.10.5;
+	Test-plain: Safari, Chrome;
+	Date: 2016-09-24;
+	My-blog:http://blog.csdn.net/linwh8/article/details/52651852;
+*/
+#bottom-positioner {
+	position: absolute;
+	width:560px;
+	height: 900px;
+	overflow: hidden;  /* Include all the element */
+	left: 37%;
+}
+#info-bar {
+	background-color: #666666;
+	border-radius: 50%;
+	position: absolute;
+	height: 0px;
+	width:0px;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0; /* Let it cannot be seen */
+	transition: all 1s ease-out 250ms;
+	overflow: hidden;
+}
+#button:hover #info-bar{
+	background-color: #666666;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	position: absolute;
+	left: 42%;
+	bottom: 15%;
+	opacity: 1; /* Let it can be seen */
+}
+#button:hover .user span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 20px;
+	color: white;
+	opacity: 1;
+}
+#button:hover .comment span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 35px;
+	color: white;
+	opacity: 1;
+}
+.user {
+	position: absolute;
+	top:10px;
+}
+.user span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 0;
+	color: white;
+	transition: all 1s ease-out 250ms;
+	opacity: 0;
+}
+.comment {
+	position: absolute;
+	top: 35px;
+	left: 30px;
+}
+.comment span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 0px;
+	color: white;
+	transition: all 1s ease-out 250ms;
+	opacity: 0;
+}
+.mine {
+	display: inline-block;
+}
+.mine span {
+	position: absolute;
+	display: inline-block;
+	margin-left: 5px;
+	color: #3cc101;
+	bottom: 7px;
+}
+.posted {
+	position: absolute;
+	top:75px;
+	left: 20px;
+}
+.like {
+	position: absolute;
+	top: 75px;
+	left:60px;
+}
+.button {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	padding: 5px;
+}
+.mask {
+	background: url(assets/images/nomask.png) no-repeat 50% 50% #666666;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0;
+	transition: all 1s ease-out 250ms;
+	background-size: 0%;
+}
+#button:hover .mask {
+	background: url(assets/images/nomask.png) no-repeat 50% 50% #666666;
+	background-size: 50%;
+	left: 37%;
+	bottom: 14%;
+	opacity: 1;
+}
+.history {
+	background: url(assets/images/history.png) no-repeat 50% 50% #666666;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0;
+	transition: all 1s ease-out 250ms;
+	background-size: 0%;
+}
+#button:hover .history {
+	background: url(assets/images/history.png) no-repeat 50% 50% #666666;
+	background-size: 50%;
+	left: 35%;
+	bottom: 9%;
+	opacity: 1;
+}
+.message {
+	background: url(assets/images/message.png) no-repeat 50% 50% #666666;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0;
+	transition: all 1s ease-out 250ms;
+	background-size: 0%;
+}
+#button:hover .message {
+	background: url(assets/images/message.png) no-repeat 50% 50% #666666;
+	background-size: 50%;
+	left: 38%;
+	bottom: 4%;
+	opacity: 1;
+}
+.unread {
+	display: inline-block;
+	position: absolute;
+	left:24px;
+	bottom: 20px;
+	background-color: red;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px; /* Let it be the center of vertical direction */
+	text-align: center;
+	transition: all 1s ease-out 250ms;
+	color: white;
+}
+.setting {
+	background: url(assets/images/setting.png) no-repeat 50% 50% #666666;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0;
+	transition: all 1s ease-out 250ms;
+	background-size: 0%;
+}
+#button:hover .setting {
+	background: url(assets/images/setting.png) no-repeat 50% 50% #666666;
+	background-size: 50%;
+	left: 46%;
+	bottom: 1%;
+	opacity: 1;
+}
+.sign {
+	background: url(assets/images/signin.png) no-repeat 50% 50% #666666;
+	left: 50%;
+	bottom: 9%;
+	opacity: 0;
+	transition: all 1s ease-out 250ms;
+	background-size: 0%;
+}
+#button:hover .sign {
+	background: url(assets/images/signin.png) no-repeat 50% 50% #666666;
+	background-size: 50%;
+	left: 56%;
+	bottom: 2%;
+	opacity: 1;
+}
+.apb {
+	position: absolute;
+	background: url(assets/images/atplus_white.png) no-repeat 50% 50% #7171C6;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 50%;
+	left:50%;
+	bottom: 9%;
+	opacity: 0.5;
+	transition: background,transform 1s ease-out 250ms;
+}
+#button:hover .apb{
+	background: url(assets/images/atplus_green.png) no-repeat 50% 50% rgba(48, 63, 159, 1);
+	background-size: 70%;
+	transform: scale(1.5);
+	opacity: 1;
+}
+ul {
+	list-style-type: none;
+}
