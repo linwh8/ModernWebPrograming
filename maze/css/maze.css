@@ -1,0 +1,171 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-align: center;
+	font-family: "Andale Mono", Arial, sans-serif;
+}
+
+.wall, .path {
+	display: inline-block;
+	position: absolute;
+}
+
+body>p:nth-of-type(-n+2) {
+	font-size: 22px;
+}
+
+.wall, #wall_example {
+	background-color: rgb(238, 238, 238);
+}
+
+#wall_example, #maze {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wall_example {
+	border: solid 1px black;
+	width: 100px;
+	height: 25px;
+}
+
+#maze {
+	width: 500px;
+	height: 300px;
+}
+
+#wall_1, #wall_2, #wall_3, #wall_4, #wall_5 {
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#wall_2, #wall_3, #wall_5, #path_1, #path_5 {
+	border-bottom: solid 1px black;
+}
+
+#wall_1, #wall_4, #path_3 {
+	border-top: solid 1px black;
+}
+
+#wall_1, #wall_2, #wall_5, #path_1 {
+	left: 0px;
+}
+
+#wall_1, #wall_5 {
+	width: 100%;
+}
+
+#wall_2, #wall_3, #path_3 {
+	top: 52px;
+}
+
+#wall_1 {
+	top:0px;
+	height: 52px;
+}
+
+#wall_2 {
+	width: 150px;
+	height: 150px;
+}
+
+#wall_3 {
+	width: 153px;
+	height: 150px;
+	right: -2px;
+}
+
+#wall_4 {
+	width: 98px;
+	height: 150px;
+	left: 200px;
+	top: 103px;
+}
+
+#wall_5 {
+	height: 46px;
+	bottom: 0px;
+}
+
+#path_1 {
+	width: 200px;
+	height: 50px;
+	top:203px;
+}
+
+#path_2 {
+	width: 50px;
+	height: 100px;
+	top: 103px;
+	left: 150px;
+}
+
+#path_3 {
+	width: 196px;
+	height: 51px;
+	left: 150px;
+}
+
+#path_4 {
+	width: 50px;
+	height: 100px;
+	top: 103px;
+	right: 150px;
+}
+
+#path_5 {
+	width: 200px;
+	height: 50px;
+	top: 203px;
+	right: 0px;
+}
+
+#start, #end {
+	position: absolute;
+	border: solid 1px black;
+	width: 43px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 35px;
+	top: 4px;
+}
+
+#start {
+	left: 0px;
+	background-color: rgb(132, 255, 124);
+	opacity: 0.7;
+}
+
+#start:hover {
+	opacity: 1;
+}
+
+#end {
+	right: -2px;
+	background-color: rgb(134, 131, 254);
+	opacity: 0.7;
+}
+
+#end:hover {
+	opacity: 1;
+}
+
+#start p, #end p {
+	margin-top: 0px;
+}
+
+.error {
+	background-color: red;
+}
+
+#test {
+	position: absolute;;
+	width: 20px;
+	height: 50px;
+	bottom: 0px;
+	right: -20px;
+}
