@@ -124,6 +124,10 @@ body>p:nth-of-type(-n+2) {
 	right: 0px;
 }
 
+.path, .wall, #start, #end {
+	cursor: pointer;
+}
+
 #start, #end {
 	position: absolute;
 	border: solid 1px black;
