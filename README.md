@@ -38,3 +38,15 @@ As we know, web is very popular nowadays. It is related to our life in all respe
  **Effect drawing:**
  ![简单计算器](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/Calculator.png)
  
+###5.maze
+ **Effect drawing:**
+ ![maze](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/maze.png)
+ 
+###6.mole
+ **Effect drawing:**
+  ![mole](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/mole.png)
+ 
+
+ 
+
+ 
