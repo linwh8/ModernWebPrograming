@@ -28,6 +28,7 @@ function clock() {
 		document.getElementById("result").value = "Gameover";
 		alert("Game Over.\n Your score is: " + document.getElementById("score").value);
 		status = 0;
+		button[current].checked = false;
 	}
 }
 
@@ -46,6 +47,7 @@ function _control() {
 		alert("Game Over.\n Your score is: " + document.getElementById("score").value);
 		document.getElementById("result").value = "Gameover";
 		clearInterval(time_value);
+		button[current].checked = false;
 		_clock = 0;
 		status = 0;
 	}
