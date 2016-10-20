@@ -15,7 +15,7 @@ window.onload = function() {
 	Create_button();
 	document.getElementById("start_stop").onclick = _control;
 	button = document.getElementsByClassName("hole");
-}
+};
 
 /* 计时器 */
 _clock = 31;
@@ -23,7 +23,7 @@ function clock() {
 	_clock = _clock-1;
 	document.getElementById("time").value = _clock;
 	time_value = setTimeout(clock, 1000);
-	if (_clock == 0) {
+	if (_clock === 0) {
 		clearInterval(time_value);
 		document.getElementById("result").value = "Gameover";
 		alert("Game Over.\n Your score is: " + document.getElementById("score").value);
@@ -34,7 +34,7 @@ function clock() {
 
 /* Start Game | Stop Game 按钮的处理器 */
 function _control() {
-	if (status == 0) {  // 初始化
+	if (status === 0) {  // 初始化
 		status = 1;
 		count = 0;
 		_clock = 31;
@@ -55,7 +55,7 @@ function _control() {
 
 /* 产生随机数的函数 */
 function Random_occur() {
-	if (_clock != 0) { // 避免游戏结束后还能继续操作
+	if (_clock !== 0) { // 避免游戏结束后还能继续操作
 		current = Math.round(Math.random()*60-1);  // 使范围处于0～59，减一是为了避免出现60的情况
 		button[current].checked = true;
 	}
@@ -63,8 +63,8 @@ function Random_occur() {
 
 /* 按钮处理器 */
 function button_react(event) {
-	if (_clock != 0) {
-		if (before == true) { // before 是点击前的状态
+	if (_clock !== 0) {
+		if (before === true) { // before 是点击前的状态
 			count++;
 			this.checked = false;  // 取消点击状态
 			Random_occur();
