@@ -21,7 +21,7 @@ body {
 	font-family: Courier, "Andale Mono", Arial, sans-serif;
 }
 
-#picture, #restart, #result {
+#picture, #restart, #result, #change_image {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;	
@@ -36,7 +36,7 @@ body {
 }
 
 /* 重新开始按钮 */
-#restart {
+#restart, #change_image {
 	cursor: pointer;
 	width: 120px;
 	height: 40px;
@@ -48,13 +48,22 @@ body {
 	opacity: 0.7;
 }
 
-#restart:hover {
+#restart:hover, #change_image:hover {
 	opacity: 1;
 	transform: scale(1.1);
 }
 
 /* 图片分块 */
-.picture_part {
+.picture_part0 {
+	background: url("../Image/1.jpg") no-repeat;
+}
+
+.picture_part1 {
+	background: url("../Image/2.jpg") no-repeat;
+}
+
+
+.picture_part0, .picture_part1 {
 	transition-duration: 0.2s;
 	position: absolute;
 	border: solid 1px #969696;
@@ -62,7 +71,6 @@ body {
 	width: 83px;
 	height: 83px;
 	margin-bottom: -4px;
-	background: url("../Image/1.jpg") no-repeat;
 	opacity: 0.9;
 }
 

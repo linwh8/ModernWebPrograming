@@ -8,6 +8,7 @@
 window.onload = function() {
 	create_pic();
 	document.getElementById("restart").addEventListener("click", random_pos);
+	document.getElementById("change_image").addEventListener("click", change_img);
 };
 
 /* 检查产生的随机数列是否是合理的，因为有可能出现恢复不到原图的情况 */
@@ -29,9 +30,19 @@ function create_pic() {
 	for (var i = 1; i <= 16; i++) {
 		var part = document.createElement("div");
 		part.addEventListener("click", pic_move);
-		part.className = "picture_part" + " position_"+i;
+		part.className = "picture_part" + count + " position_"+i;
 		picture.appendChild(part);
 		part.id = "_position_"+i;
+	}
+}
+
+/* 改变图片 */
+var count = 0;
+function change_img(event) {
+	if (count < 1) count++;
+	else return;
+	for (var i = 0; i < 16; i++) {
+		picture.childNodes[i].className += " picture_part" + count;
 	}
 }
 
@@ -40,7 +51,7 @@ function random_pos(event) {
 	document.getElementById("result").innerText = "";
 	/* 产生随机数列前先将拼图块对应的位置复位 */
 	for (var k = 1; k <= 16; k++) {
-		document.getElementById("_position_"+k).className="picture_part position_"+k;
+		document.getElementById("_position_"+k).className="picture_part"+count+" position_"+k;
 	}
 	var part = document.getElementById("picture").childNodes;
 	random_arr = [];
@@ -57,7 +68,7 @@ function random_pos(event) {
 	}
 	/* 通过更改类名来改变位置 */
 	for (var i = 0; i < 15; i++) {
-		part[i].className = "picture_part" + " position_" + random_arr[i];
+		part[i].className = "picture_part" + count + " position_" + random_arr[i];
 	}
 }
 
@@ -82,7 +93,8 @@ function pic_move(event) {
 function check() {
 	for (var i = 1; i <= 16; i++) {
 		var item = document.getElementById("_position_"+i);
-		if (item.className != "picture_part position_"+i) {
+		if (item.className != "picture_part" + count +" position_"+i &&
+			item.className != "picture_part0" + " position_" + i + " picture_part1") {
 			document.getElementById("result").innerText = "Continue...";
 			return;
 		}
