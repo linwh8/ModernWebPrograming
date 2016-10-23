@@ -1,0 +1,172 @@
+/* 大布局定位 */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+/* 元素居中 */
+body {
+	text-align: center;
+}
+
+/* 结果显示 */
+#result {
+	width: 200px;
+	height: 50px;
+	font-size: 40px;
+	color: red;
+	font-family: Courier, "Andale Mono", Arial, sans-serif;
+}
+
+#picture, #restart, #result {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+/* 拼图容器 */
+#picture {
+	position: relative;
+	width: 350px;
+	height: 355px;
+	margin-bottom: 30px;
+}
+
+/* 重新开始按钮 */
+#restart {
+	cursor: pointer;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #4286F5;
+	box-shadow: 3px 4px 15px black;
+	color: white;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+#restart:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+/* 图片分块 */
+.picture_part {
+	transition-duration: 0.2s;
+	position: absolute;
+	border: solid 1px #969696;
+	display: inline-block;
+	width: 83px;
+	height: 83px;
+	margin-bottom: -4px;
+	background: url("../Image/1.jpg") no-repeat;
+	opacity: 0.9;
+}
+
+.picture_part:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+/* 类名 position_x 代表了位置 */
+.position_1, .position_2, .position_3, .position_4 {
+	top: 0px;
+}
+
+.position_5, .position_6, .position_7, .position_8 {
+	top: 85px;
+}
+
+.position_9, .position_10, .position_11, .position_12 {
+	top: 170px;
+}
+
+.position_13, .position_14, .position_15, .position_16 {
+	top: 255px;
+}
+
+.position_1, .position_5, .position_9, .position_13 {
+	left: 0px;
+}
+
+.position_2, .position_6, .position_10, .position_14 {
+	left: 85px;
+}
+
+.position_3, .position_7, .position_11, .position_15 {
+	left: 170px;
+}
+
+.position_4, .position_8, .position_12, .position_16 {
+	left: 255px;
+}
+
+/* id _position_x 代表每一个分块 */
+#_position_1 {
+	background-position: 0px 0px;
+}
+
+#_position_2 {
+	background-position: -85px 0px;
+}
+
+#_position_3 {
+	background-position: -169px 0px;
+}
+
+#_position_4 {
+	background-position: -253px 0px;
+}
+
+#_position_5 {
+	background-position: 0px -84px;
+}
+
+#_position_6 {
+	background-position: -85px -84px;
+}
+
+#_position_7 {
+	background-position: -169px -84px;
+}
+
+#_position_8 {
+	background-position: -253px -84px;	
+}
+
+#_position_9 {
+	background-position: 0px -168px;
+}
+
+#_position_10 {
+	background-position: -85px -168px;
+}
+
+#_position_11 {
+	background-position: -169px -168px;	
+}
+
+#_position_12 {
+	background-position: -253px -168px;
+}
+
+#_position_13 {
+	background-position: 0px -252px;
+}
+
+#_position_14 {
+	background-position: -85px -252px;
+}
+
+#_position_15 {
+	background-position: -169px -252px;	
+}
+
+#_position_16 {
+	opacity: 0;
+	background-position: -253px -252px;
+	background-image: none;
+}
