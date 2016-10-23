@@ -46,6 +46,10 @@ As we know, web is very popular nowadays. It is related to our life in all respe
  **Effect drawing:**
   ![mole](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/mole.png)
  
+###7.puzzle
+ **Effect drawing:**
+  ![mole](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/puzzle.png)
+
 
  
 
