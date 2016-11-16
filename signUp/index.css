@@ -1,0 +1,63 @@
+html, body {
+	width:100%;
+	height: 100%;
+	margin:0px;
+	padding: 0px;
+	background: url(image/background.jpg) no-repeat; 
+	background-size: cover;
+	color: white;
+}
+
+body, h2 {
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+
+div {
+	position: relative;
+	top:40px;
+	border: solid 1px black;
+	border-radius: 20%;
+	width: 350px;
+	height: 300px;
+	text-align: left;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background-color: rgba(77,189,235,0.3);
+}
+
+p input {
+	left: 80px;
+	opacity: 0.5;
+}
+
+p input, div>input, span {
+	position: absolute;
+}
+
+div>input {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(77,189,235,0.3);
+	border-radius: 50%;
+}
+
+div>input:nth-of-type(1) {
+	top: 280px;
+	right:120px;
+}
+
+div>input:nth-of-type(2) {
+	top:280px;
+	right:50px;
+}
+
+span {
+	right: 17px;
+}
+

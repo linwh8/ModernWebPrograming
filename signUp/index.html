@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sign up</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<form method="POST" action="http://127.0.0.1:8000/info.html" onsubmit="return checksubmit()">
+			<h1>注册</h1>
+			<div>
+				<h2>用户注册</h2>
+				<p>用户名：<input type="text" name="username" value="" id="txtUsername"><span></span></p>
+				<p>学号：<input type="text" name="studentid" value="" id="txtStudentid"><span></span></p>
+				<p>电话：<input type="text" name="phone" value="" id="txtPhone"><span></span></p>
+				<p>邮箱：<input type="text" name="email" value="" id="txtEmail"><span></span></p>
+				<input type="reset" name="reset" value="重置">
+				<input type="submit" name="submit" value="提交" id="submit">
+			</div>
+			<br>
+			<p>提示</p>
+			<p>用户名6~18位英文字母、数字或下划线，必须以英文字母开头</p>
+			<p>学号8位数字，不能以0开头</p>
+			<p>电话11位数字，不能以0开头</p>
+		</form>
+	</body>
+</html>
